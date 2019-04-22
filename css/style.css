@@ -1,0 +1,86 @@
+body {
+    background: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card {
+    float: left;
+    margin: 6px;
+    -webkit-box-shadow: 10px -10px 13px -9px  rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px -10px 13px -9px  rgba(0,0,0,0.75);
+    box-shadow: 10px -10px 13px -9px  rgba(0,0,0,0.75);
+}
+ul {
+    display: inline-block;
+}
+.my {
+    display: inline-block;
+    width: 50px;
+}
+.rename {
+    border-radius: 20px;
+    padding-left:8px;
+    height:35px;
+}
+.submit {
+     width: 60px;
+     height: 30px;
+     border-radius: 25px;
+     cursor: pointer;
+ }
+ .rename:focus {
+     outline: none;
+     -webkit-box-shadow: -11px -5px 13px -4px rgba(0,0,0,0.75);
+     -moz-box-shadow: -11px -5px 13px -4px rgba(0,0,0,0.75);
+     box-shadow: -11px -5px 13px -4px rgba(0,0,0,0.75);
+}
+ .submit:hover {
+     -webkit-box-shadow: -10px -4px 7px -8px rgba(0, 0, 0, 0.75);
+     -moz-box-shadow: -10px -4px 7px -8px rgba(0, 0, 0, 0.75);
+     box-shadow: -10px -4px 7px -8px rgba(0, 0, 0, 0.75);
+ }
+#file {
+    display: inline-block;
+}
+.submit:focus {
+    outline: none;
+}
+.myform {
+    position: relative;
+    left: 100px;
+    bottom: 38px;
+}
+.actived {
+    border: 0.5px inset red !important;
+    border-radius:8px;
+    -webkit-box-shadow: -10px -4px 7px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px -4px 7px -8px rgba(0,0,0,0.75);
+    box-shadow: -10px -4px 7px -8px rgba(0,0,0,0.75);
+}
+.card-img-top {
+    object-fit: cover;
+    height: 250px;
+}
+.active {
+    -webkit-box-shadow: -10px -4px 7px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px -4px 7px -8px rgba(0,0,0,0.75);
+    box-shadow: -10px -4px 7px -8px rgba(0,0,0,0.75);
+}
+#folder_button {
+    word-spacing: 0.1px;
+    color: white;
+    font-weight: bolder;
+    transition: 0.5s;
+    background: rgb(120, 28, 162);
+    background: linear-gradient(90deg, rgba(120, 28, 162, 1) 0%, rgba(101, 204, 224, 1) 47%, rgba(120, 28, 162, 1) 100%);
+}
+#folder_button:hover {
+    transition:1s;
+    background-position:50px;
+ }
+.cont{
+    padding: 30px;
+}
+.container{
+    margin-top: 30px;
+}
