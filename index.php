@@ -1,11 +1,12 @@
 <?php
+require "config.php";
 $string = $_SERVER["REQUEST_URI"];
 $plorp = substr(strrchr($string,'/'), 1);
 $string = substr($string, 0, - strlen($plorp));
 define("URL", $string);
     if (!isset($_GET['folder']) || $_GET['folder']==="/" || $_GET['folder']==="\\" || $_GET['folder']==="compressed" ||
         !isset($_GET['page']) || $_GET['page']==="/" || $_GET['page']==="\\" || $_GET['page']==="") {
-        header('location: ' . URL .'/?page=0&sort=name&type=desc&folder=compressed/');
+        header('location: ' . PATH .'/?page=0&sort=name&type=desc&folder=compressed/');
     }
 
     if (!is_dir("compressed")) {
@@ -23,12 +24,12 @@ if (isset($_GET['folder'])) {
     if (!endsWith($_GET['folder'], "/")) {
         $boom = explode("/", $_GET['folder']);
         $newurl = end($boom);
-        header('location: ' . URL .$newurl.'/');
+        header('location: ' . PATH . URL .$newurl.'/');
     }
 }
 if (isset($_GET['folder'])) {
     if (!is_dir($_GET['folder'])) {
-        header('location: /?folder=compressed/');
+        header('location: ' . PATH .'/?page=0&sort=name&type=desc&folder=compressed/');
     }
 }
 ?>

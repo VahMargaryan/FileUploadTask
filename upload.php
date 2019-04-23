@@ -1,4 +1,5 @@
 <?php
+require "config.php";
 if (isset($_FILES['file'])) {
 
     $fileName = $_FILES['file']['name'];

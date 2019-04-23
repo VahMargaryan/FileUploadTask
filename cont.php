@@ -130,7 +130,7 @@ if ($arrlen > $GLOBALS['limit']) {
                     <?php
                     if (is_dir($data[1])) {
                         echo "DIRECTORY"; ?>
-                        <a href="/?page=0&folder=<?php echo $data[1].'' ?>" class="direct"> View </a><?php
+                        <a href="<?php echo PATH . "?folder=". $data[1] . '/'."&page=0" ?>" class="direct"> View </a><?php
                     }
                     else {
                         echo $data[1];
